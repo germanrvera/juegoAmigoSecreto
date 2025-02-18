@@ -1,4 +1,4 @@
-Descripción:
+<em> Descripción: </em>
 Aplicación web que permite agregar nombres de amigos a una lista y sortear aleatoriamente uno de ellos.
 
 Funcionalidades:
