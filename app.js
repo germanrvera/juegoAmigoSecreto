@@ -12,6 +12,9 @@ function agregarAmigo() {
     amigos.push(nombre);
     nombreInput.value = '';
     mostrarAmigos();
+
+    // Posicionar el cursor en el campo de entrada después de añadir un nombre
+    nombreInput.focus();
 }
 
 function mostrarAmigos() {
@@ -34,4 +37,11 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indiceAleatorio];
     document.getElementById('resultado').innerHTML = `<li>El amigo sorteado es: ${amigoSorteado}</li>`;
+
+    // Limpiar la lista de amigos después del sorteo
+    amigos = [];
+    mostrarAmigos();
 }
+
+
+
